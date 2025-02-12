@@ -1,0 +1,17 @@
+#% Rest Connector Descriptor 1.0
+
+apiSpec:
+  url: 'D:\WorkSpace\Upl_Dev\pikconnect\rFuel-uRest-v4.yaml'
+
+connectorName: rFuel Connector - Mule 4
+connectorDescription: 'rFuel:uRest Connector for Pick Databases'
+connectorCategory: certified
+
+connectorGav:
+  groupId: com.mulesoft.connectors
+  artifactId: mule4-rfuel-connector
+  version: 1.0.0
+
+baseUri:
+  value: 'http://localhost:8081/api'
+  type: parameter

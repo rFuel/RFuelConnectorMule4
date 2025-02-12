@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress HtmlUnknownTag -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>rFuel Connector - Mule 4</name>
+    <description>rFuel:uRest Connector for Pick Databases</description>
+    <parent>
+        <groupId>com.mulesoft.connectivity</groupId>
+        <artifactId>rest-sdk-connector-parent-pom</artifactId>
+        <version>0.8.0-RC3</version>
+    </parent>
+
+    <groupId>com.mulesoft.connectors</groupId>
+    <artifactId>mule4-rfuel-connector</artifactId>
+    <version>1.0.0</version>
+    <packaging>mule-extension</packaging>
+    
+    <repositories>
+        <repository>
+            <id>mulesoft-releases</id>
+            <name>MuleSoft Releases Repository</name>
+            <url>https://repository.mulesoft.org/releases/</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+    
+    <properties>
+        <rest.sdk.commons.version>${project.parent.version}</rest.sdk.commons.version>
+        <rest.sdk.mojo.version>${project.parent.version}</rest.sdk.mojo.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.mule.runtime.plugins</groupId>
+                <artifactId>mule-extensions-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.mulesoft.munit</groupId>
+                <artifactId>munit-extensions-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
